@@ -1,7 +1,7 @@
 {
     "name": "elsayed85/nmea-parser",
     "description": "NMEA PHP parser",
-    "version": "1.0.0",
+    "version": "1.1",
     "type": "library",
     "keywords": ["nmea", "parser"],
     "time": "2017-09-17",
