@@ -1,19 +1,19 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\tests\units;
+namespace Elsayed85\NMEA\Frames\tests\units;
 
 use mageekguy\atoum;
 
 /**
- * Unit test class for class \BultonFr\NMEA\Frame
+ * Unit test class for class \Elsayed85\NMEA\Frame
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
 class RMC extends atoum\test
 {
     /**
-     * @var \BultonFr\NMEA\Frames\RMC $frame The RMC frame instance used by unit test
+     * @var \Elsayed85\NMEA\Frames\RMC $frame The RMC frame instance used by unit test
      */
     protected $frame;
     
@@ -26,13 +26,13 @@ class RMC extends atoum\test
      */
     public function beforeTestMethod($methodName)
     {
-        $this->frame = new \BultonFr\NMEA\Frames\RMC(
+        $this->frame = new \Elsayed85\NMEA\Frames\RMC(
             '$GPRMC,123519,A,4807.038,N,01131.000,E,022.4,084.4,230394,003.1,W*6A'
         );
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getFrameType method
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getFrameType method
      * 
      * @return void
      */
@@ -44,7 +44,7 @@ class RMC extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::decodeFrame method and call all getters
+     * Test method for \Elsayed85\NMEA\Frames\RMC::decodeFrame method and call all getters
      * 
      * @return void
      */
@@ -69,7 +69,7 @@ class RMC extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getUtcTime
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getUtcTime
      * 
      * @return void
      */
@@ -92,7 +92,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getStatus
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getStatus
      * 
      * @return void
      */
@@ -105,7 +105,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getLatitude
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getLatitude
      * 
      * @return void
      */
@@ -118,7 +118,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getLatitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getLatitudeDirection
      * 
      * @return void
      */
@@ -131,7 +131,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getLongitude
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getLongitude
      * 
      * @return void
      */
@@ -144,7 +144,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getLongitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getLongitudeDirection
      * 
      * @return void
      */
@@ -157,7 +157,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getSpeed
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getSpeed
      * 
      * @return void
      */
@@ -170,7 +170,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getAngle
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getAngle
      * 
      * @return void
      */
@@ -183,7 +183,7 @@ class RMC extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getUtcDate
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getUtcDate
      * 
      * @return void
      */
@@ -206,7 +206,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getMagneticVariation
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getMagneticVariation
      * 
      * @return void
      */
@@ -219,7 +219,7 @@ class RMC extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\RMC::getMagneticVariationDirection
+     * Test method for \Elsayed85\NMEA\Frames\RMC::getMagneticVariationDirection
      * 
      * @return void
      */
@@ -235,7 +235,7 @@ class RMC extends atoum\test
     {
         $this->assert('Frames\RMC::getMode()');
         
-        $this->frame = new \BultonFr\NMEA\Frames\RMC(
+        $this->frame = new \Elsayed85\NMEA\Frames\RMC(
             '$GPRMC,120250.000,A,4331.1611,N,00407.6114,E,4.17,324.43,170917,,,A*60'
         );
         

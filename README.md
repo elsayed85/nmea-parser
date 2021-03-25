@@ -38,7 +38,7 @@ Add into `composer.json` file :
 require_once(__DIR__.'/vendor/autoload.php');
 
 //Instanciate the parser
-$parser = new BultonFr\NMEA\Parser;
+$parser = new Elsayed85\NMEA\Parser;
 
 //Déclare a line to parse
 $line = '$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E';
@@ -49,7 +49,7 @@ $frame = $parser->readLine($line);
 
 `$frame` contains all datas about the readed line. If you `var_dump($frame)` :
 ```
-class BultonFr\NMEA\Frames\GGA#2 (19) {
+class Elsayed85\NMEA\Frames\GGA#2 (19) {
   protected $frameType => string(3) "GGA"
   protected $frameRegex => string(175) "/^([A-Z]{2}[A-Z]{3}),(\d{6}\.\d{2,3}),([0-9\.]+),(N|S),([0-9\.]+),(E|W),(\d{0,1}),(\d{0,2}),([0-9\.]*),([0-9\.]*),([A-Z]{0,1}),([0-9\.-]*),([A-Z]{0,1}),([0-9\.]*),(\d{0,4})$/m"
   protected $utcTime => class DateTime#5 (3) {
@@ -80,9 +80,9 @@ There is a getter for all properties, except for `frameRegex`, `message` and `ch
 
 ## Add a new frame type
 
-Add a new class into the namespace `BultonFr\NMEA\Frames`. Else, you need to extends `Parser` class and redefine the method `obtainFrameParser`.
+Add a new class into the namespace `Elsayed85\NMEA\Frames`. Else, you need to extends `Parser` class and redefine the method `obtainFrameParser`.
 
-The name of the class need to be the frame type name. Example `GGA` for frame type GGA. This class should extends the class `\BultonFr\NMEA\Frame`.
+The name of the class need to be the frame type name. Example `GGA` for frame type GGA. This class should extends the class `\Elsayed85\NMEA\Frame`.
 
 You should have properties `$frameType` and `$frameRegex`. And the method `decodeFrame` should be declared.
 

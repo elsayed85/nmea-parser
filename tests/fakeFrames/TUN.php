@@ -1,14 +1,14 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\Fakes;
+namespace Elsayed85\NMEA\Frames\Fakes;
 
 /**
  * Fake frame type for unit test
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
-class TUN extends \BultonFr\NMEA\Frame
+class TUN extends \Elsayed85\NMEA\Frame
 {
     /**
      * {@inheritdoc}

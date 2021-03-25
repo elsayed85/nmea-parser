@@ -1,19 +1,19 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\tests\units;
+namespace Elsayed85\NMEA\Frames\tests\units;
 
 use mageekguy\atoum;
 
 /**
- * Unit test class for class \BultonFr\NMEA\Frame
+ * Unit test class for class \Elsayed85\NMEA\Frame
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
 class VTG extends atoum\test
 {
     /**
-     * @var \BultonFr\NMEA\Frames\VTG $frame The VTG frame instance used by unit test
+     * @var \Elsayed85\NMEA\Frames\VTG $frame The VTG frame instance used by unit test
      */
     protected $frame;
     
@@ -26,13 +26,13 @@ class VTG extends atoum\test
      */
     public function beforeTestMethod($methodName)
     {
-        $this->frame = new \BultonFr\NMEA\Frames\VTG(
+        $this->frame = new \Elsayed85\NMEA\Frames\VTG(
             '$GPVTG,054.7,T,034.4,M,005.5,N,010.2,K*48'
         );
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::getFrameType method
+     * Test method for \Elsayed85\NMEA\Frames\VTG::getFrameType method
      * 
      * @return void
      */
@@ -44,7 +44,7 @@ class VTG extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::decodeFrame method and call all getters
+     * Test method for \Elsayed85\NMEA\Frames\VTG::decodeFrame method and call all getters
      * 
      * @return void
      */
@@ -62,7 +62,7 @@ class VTG extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::getTrueTrack
+     * Test method for \Elsayed85\NMEA\Frames\VTG::getTrueTrack
      * 
      * @return void
      */
@@ -75,7 +75,7 @@ class VTG extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::getMagneticTrack
+     * Test method for \Elsayed85\NMEA\Frames\VTG::getMagneticTrack
      * 
      * @return void
      */
@@ -88,7 +88,7 @@ class VTG extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::getSpeedKnots
+     * Test method for \Elsayed85\NMEA\Frames\VTG::getSpeedKnots
      * 
      * @return void
      */
@@ -101,7 +101,7 @@ class VTG extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\VTG::getSpeedKmH
+     * Test method for \Elsayed85\NMEA\Frames\VTG::getSpeedKmH
      * 
      * @return void
      */
@@ -117,7 +117,7 @@ class VTG extends atoum\test
     {
         $this->assert('Frames\RMC::getMode()');
         
-        $this->frame = new \BultonFr\NMEA\Frames\VTG(
+        $this->frame = new \Elsayed85\NMEA\Frames\VTG(
             '$GPVTG,324.24,T,,M,4.23,N,7.8,K,A*04'
         );
         

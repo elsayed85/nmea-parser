@@ -1,19 +1,19 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\tests\units;
+namespace Elsayed85\NMEA\Frames\tests\units;
 
 use mageekguy\atoum;
 
 /**
- * Unit test class for class \BultonFr\NMEA\Frame
+ * Unit test class for class \Elsayed85\NMEA\Frame
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
 class GLL extends atoum\test
 {
     /**
-     * @var \BultonFr\NMEA\Frames\GLL $frame The GLL frame instance used by unit test
+     * @var \Elsayed85\NMEA\Frames\GLL $frame The GLL frame instance used by unit test
      */
     protected $frame;
     
@@ -26,13 +26,13 @@ class GLL extends atoum\test
      */
     public function beforeTestMethod($methodName)
     {
-        $this->frame = new \BultonFr\NMEA\Frames\GLL(
+        $this->frame = new \Elsayed85\NMEA\Frames\GLL(
             '$GPGLL,4916.45,N,12311.12,W,225444,A,*1D'
         );
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getFrameType method
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getFrameType method
      * 
      * @return void
      */
@@ -44,7 +44,7 @@ class GLL extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::decodeFrame method and call all getters
+     * Test method for \Elsayed85\NMEA\Frames\GLL::decodeFrame method and call all getters
      * 
      * @return void
      */
@@ -64,7 +64,7 @@ class GLL extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getLatitude
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getLatitude
      * 
      * @return void
      */
@@ -77,7 +77,7 @@ class GLL extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getLatitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getLatitudeDirection
      * 
      * @return void
      */
@@ -90,7 +90,7 @@ class GLL extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getLongitude
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getLongitude
      * 
      * @return void
      */
@@ -103,7 +103,7 @@ class GLL extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getLongitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getLongitudeDirection
      * 
      * @return void
      */
@@ -116,7 +116,7 @@ class GLL extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getUtcTime
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getUtcTime
      * 
      * @return void
      */
@@ -139,7 +139,7 @@ class GLL extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GLL::getStatus
+     * Test method for \Elsayed85\NMEA\Frames\GLL::getStatus
      * 
      * @return void
      */
@@ -155,7 +155,7 @@ class GLL extends atoum\test
     {
         $this->assert('Frames\RMC::getMode()');
         
-        $this->frame = new \BultonFr\NMEA\Frames\GLL(
+        $this->frame = new \Elsayed85\NMEA\Frames\GLL(
             '$GPGLL,4331.1611,N,00407.6114,E,120250.000,A,A*5E'
         );
         

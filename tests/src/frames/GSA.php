@@ -1,19 +1,19 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\tests\units;
+namespace Elsayed85\NMEA\Frames\tests\units;
 
 use mageekguy\atoum;
 
 /**
- * Unit test class for class \BultonFr\NMEA\Frame
+ * Unit test class for class \Elsayed85\NMEA\Frame
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
 class GSA extends atoum\test
 {
     /**
-     * @var \BultonFr\NMEA\Frames\GSA $frame The GSA frame instance used by unit test
+     * @var \Elsayed85\NMEA\Frames\GSA $frame The GSA frame instance used by unit test
      */
     protected $frame;
     
@@ -26,13 +26,13 @@ class GSA extends atoum\test
      */
     public function beforeTestMethod($methodName)
     {
-        $this->frame = new \BultonFr\NMEA\Frames\GSA(
+        $this->frame = new \Elsayed85\NMEA\Frames\GSA(
             '$GPGSA,A,3,04,05,,09,12,,,24,,,,,2.5,1.3,2.1*39'
         );
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getFrameType method
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getFrameType method
      * 
      * @return void
      */
@@ -44,7 +44,7 @@ class GSA extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::decodeFrame method and call all getters
+     * Test method for \Elsayed85\NMEA\Frames\GSA::decodeFrame method and call all getters
      * 
      * @return void
      */
@@ -64,7 +64,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getSelection
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getSelection
      * 
      * @return void
      */
@@ -77,7 +77,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getMode
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getMode
      * 
      * @return void
      */
@@ -90,7 +90,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getSatellitesPNR
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getSatellitesPNR
      * 
      * @return void
      */
@@ -116,7 +116,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getPdop
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getPdop
      * 
      * @return void
      */
@@ -129,7 +129,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getHdop
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getHdop
      * 
      * @return void
      */
@@ -142,7 +142,7 @@ class GSA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GSA::getVdop
+     * Test method for \Elsayed85\NMEA\Frames\GSA::getVdop
      * 
      * @return void
      */

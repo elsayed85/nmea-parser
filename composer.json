@@ -26,14 +26,14 @@
     },
     "autoload": {
         "psr-4": {
-            "BultonFr\\NMEA\\": "src/",
-            "BultonFr\\NMEA\\Frames\\": "src/frames/",
-            "BultonFr\\NMEA\\Utils\\": "src/utils/"
+            "Elsayed85\\NMEA\\": "src/",
+            "Elsayed85\\NMEA\\Frames\\": "src/frames/",
+            "Elsayed85\\NMEA\\Utils\\": "src/utils/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BultonFr\\NMEA\\Frames\\Fakes\\": "tests/fakeFrames/"
+            "Elsayed85\\NMEA\\Frames\\Fakes\\": "tests/fakeFrames/"
         }
     }
 }

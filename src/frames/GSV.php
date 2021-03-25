@@ -1,16 +1,16 @@
 <?php
 
-namespace BultonFr\NMEA\Frames;
+namespace Elsayed85\NMEA\Frames;
 
 /**
  * Define the parser system for GSV frame type
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  * @link http://www.gpsinformation.org/dale/nmea.htm#GSV
  * @link http://aprs.gids.nl/nmea/#gsv
  */
-class GSV extends \BultonFr\NMEA\Frame
+class GSV extends \Elsayed85\NMEA\Frame
 {
     /**
      * {@inheritdoc}

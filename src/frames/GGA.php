@@ -1,6 +1,6 @@
 <?php
 
-namespace BultonFr\NMEA\Frames;
+namespace Elsayed85\NMEA\Frames;
 
 use \DateTime;
 use \DateTimeZone;
@@ -8,11 +8,11 @@ use \DateTimeZone;
 /**
  * Define the parser system for GGA frame type
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  * @link http://www.gpsinformation.org/dale/nmea.htm#GGA
  */
-class GGA extends \BultonFr\NMEA\Frame
+class GGA extends \Elsayed85\NMEA\Frame
 {
     /**
      * {@inheritdoc}

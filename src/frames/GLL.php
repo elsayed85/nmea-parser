@@ -1,6 +1,6 @@
 <?php
 
-namespace BultonFr\NMEA\Frames;
+namespace Elsayed85\NMEA\Frames;
 
 use \DateTime;
 use \DateTimeZone;
@@ -8,12 +8,12 @@ use \DateTimeZone;
 /**
  * Define the parser system for GLL frame type
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  * @link http://www.gpsinformation.org/dale/nmea.htm#GLL
  * @link http://aprs.gids.nl/nmea/#gll
  */
-class GLL extends \BultonFr\NMEA\Frame
+class GLL extends \Elsayed85\NMEA\Frame
 {
     /**
      * {@inheritdoc}

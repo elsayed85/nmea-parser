@@ -1,19 +1,19 @@
 <?php
 
-namespace BultonFr\NMEA\Frames\tests\units;
+namespace Elsayed85\NMEA\Frames\tests\units;
 
 use mageekguy\atoum;
 
 /**
- * Unit test class for class \BultonFr\NMEA\Frame
+ * Unit test class for class \Elsayed85\NMEA\Frame
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  */
 class GGA extends atoum\test
 {
     /**
-     * @var \BultonFr\NMEA\Frames\GGA $frame The GGA frame instance used by unit test
+     * @var \Elsayed85\NMEA\Frames\GGA $frame The GGA frame instance used by unit test
      */
     protected $frame;
     
@@ -26,13 +26,13 @@ class GGA extends atoum\test
      */
     public function beforeTestMethod($methodName)
     {
-        $this->frame = new \BultonFr\NMEA\Frames\GGA(
+        $this->frame = new \Elsayed85\NMEA\Frames\GGA(
             '$GPGGA,064036.289,4836.5375,N,00740.9373,E,1,04,3.2,200.2,M,,,,0000*0E'
         );
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getFrameType method
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getFrameType method
      * 
      * @return void
      */
@@ -44,7 +44,7 @@ class GGA extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::decodeFrame method and call all getters
+     * Test method for \Elsayed85\NMEA\Frames\GGA::decodeFrame method and call all getters
      * 
      * @return void
      */
@@ -72,7 +72,7 @@ class GGA extends atoum\test
     }
     
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getUtcTime
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getUtcTime
      * 
      * @return void
      */
@@ -97,7 +97,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getLatitude
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getLatitude
      * 
      * @return void
      */
@@ -110,7 +110,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getLatitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getLatitudeDirection
      * 
      * @return void
      */
@@ -123,7 +123,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getLongitude
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getLongitude
      * 
      * @return void
      */
@@ -136,7 +136,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getLongitudeDirection
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getLongitudeDirection
      * 
      * @return void
      */
@@ -149,7 +149,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getGpsQuality
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getGpsQuality
      * 
      * @return void
      */
@@ -162,7 +162,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getNbSatellites
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getNbSatellites
      * 
      * @return void
      */
@@ -175,7 +175,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getHorizontalDilutionPrecision
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getHorizontalDilutionPrecision
      * 
      * @return void
      */
@@ -188,7 +188,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getAltitude
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getAltitude
      * 
      * @return void
      */
@@ -201,7 +201,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getAltitudeUnit
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getAltitudeUnit
      * 
      * @return void
      */
@@ -214,7 +214,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getGeoidalSeparation
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getGeoidalSeparation
      * 
      * @return void
      */
@@ -227,7 +227,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getGeoidalSeparationUnit
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getGeoidalSeparationUnit
      * 
      * @return void
      */
@@ -240,7 +240,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getAgeGpsData
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getAgeGpsData
      * 
      * @return void
      */
@@ -253,7 +253,7 @@ class GGA extends atoum\test
     }
 
     /**
-     * Test method for \BultonFr\NMEA\Frames\GGA::getDifferentialRefStationId
+     * Test method for \Elsayed85\NMEA\Frames\GGA::getDifferentialRefStationId
      * 
      * @return void
      */

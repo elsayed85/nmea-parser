@@ -1,16 +1,16 @@
 <?php
 
-namespace BultonFr\NMEA\Frames;
+namespace Elsayed85\NMEA\Frames;
 
 /**
  * Define the parser system for VTG frame type
  * 
- * @package BultonFr\NMEA
+ * @package Elsayed85\NMEA
  * @author Vermeulen Maxime <bulton.fr@gmail.com>
  * @link http://www.gpsinformation.org/dale/nmea.htm#VTG
  * @link http://aprs.gids.nl/nmea/#vtg
  */
-class VTG extends \BultonFr\NMEA\Frame
+class VTG extends \Elsayed85\NMEA\Frame
 {
     /**
      * {@inheritdoc}
